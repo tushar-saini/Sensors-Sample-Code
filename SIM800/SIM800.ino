@@ -32,7 +32,7 @@ void loop() {
   delay(2000); GsmResponse();
   
   myGsm.println(F("AT+SAPBR=2,1")); // Shows IP
-  delay(2000); GsmResponse();
+  delay(5000); GsmResponse();
 
   myGsm.println("AT+HTTPINIT"); // Initialize  HTTP  Service
   delay(2000);
